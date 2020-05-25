@@ -23,6 +23,8 @@ anchorcolor = blue]{hyperref}
 \usepackage[backend=biber,sorting=none,backref=true]{biblatex}
 \addbibresource{cites.bib}
 
+\usepackage{enumitem}
+
 \begin{document}
   \maketitle
   \hrule
@@ -30,9 +32,107 @@ anchorcolor = blue]{hyperref}
   \hrule
   \vspace{2.5em}
   % begin main text
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  \section{Introduction and Background}
+  Diversity and Inclusion (D\&I) is a very important topic in society at large. Physics, in general, has been notoriously slow in improving its representation and accessibility - however this is certainly a topic that is gaining more attention in recent times. Diversity works to make us smarter~\cite{HowDiversityWorks} as research shows that socially diverse groups (i.e. diversity of race, ethnicity, gender and/or sexual oreitnation) are more innovative than homogeneous groups. By including and interacting with diverse individuals, the group is quickly learns to be better prepared, to anticipate needs, to understand alternative viewpoints, and put effort into reaching consensus.
 
-  Test cite~\cite{lukas_2019_3334365}.
+  There are many ways to promote this effort in any organization, from encouraging younger members to ask questions first after a presentation to ensuring equitable access to restrooms and quiet areas at a conference. This letter of interest is aimed to suggest a whitepaper that will document (perhaps in a checklist form) ways to improve and make Science more inclusive, with a light shown introspectively on the Snowmass 2021 process.
+
+  What is the purpose of the whitepaper? It will try to formalize all the thoughts and musings that I've tried to organize in this Letter of Interest. The focus should be to try to provide recommendations about how to do these kinds of things with accessibility, and provide resources/explanations of why closed captions can be preferable to ASL or vice-versa, to help people understand what it means to think about making physics meetings accessible to people who are d/Deaf and Hard-of-Hearing. This allows the whitepaper to be a formal part of the Snowmass 2021 process and hopefully lead to impactful dialogue at the agency level and elsewhere.
+
+  \subsection{Case Study: Snowmass 2021 Virtual Meetings}
+
+  Due to the current COVID-19 pandemic, shelter-in-place orders have been in effect all around the world. All physics meetings have migrated to taking place online. How can these meetings be made accessible? There are lots of questions that revolve around organization, funding, and advocacy. This section aims to touch on a couple of these somewhat superficially but does not aim to provide recommendations right now. You might ask, \textsl{Can I provide a transcript for the meeting?}, and while that makes the recording of the meeting accessible after the fact, and this is nice, it does not encourage or enable participation \textbf{during} a meeting which is part of what this document aims to discuss.
+
+  \subsubsection{What kind of access to provide?}
+
+  First, if a d/Deaf person requests access to these meetings, what access should be provided? In nearly all cases, guidance should be from the person making the request as they will tell you their preferred communications~\cite{chua2017behind}. Not all deaf people know American Sign Language (ASL), because they may not have had access to this growing up, or they are fluent in another signed language such as LSF (langue des signes française; French Sign Language). Some deaf folx do not sign at all and are oral-only communicators; some other Deaf folx only communicate via a signed language (e.g. ASL); and others are a hybrid of both. There are two approaches one can do here, to be reactive (wait for an accessibility request), and to be proactive (provide access no matter what).
+
+  In the case of being proactive, providing captioning is a solid choice. While ASL (or a signed language) is more inclusive for Deaf ASL signers, captioning will help more than just d/Deaf and is a little easier to set up and/or budget for. Captioning would help anyone who can't hear well (age, accent, environmental noise, etc..), or has trouble constantly focusing/listening, or those for whom english is not their first language, and find it easier to follow if there's written English. This is a utilitariatistic approach.
+
+  Should Snowmass 2021 provide both captioning and ASL interpretation? Yes. Note that there are a lot of contextual clues at play here when making the comparison between ASL and captioning - enough that it is essentially apples to oranges. For example, CA-based interpreters do a lot better with Asian-centric accents because they've grown up or have gotten accustomed to those accents. Usually, there's a regional bias in play for that sort of thing where an ASL interpreter is often in person from the same area where the request happens -- so they overcome that initial barrier of regional dialects -- while an online/remote captioner could come from anywhere. CART/RTSC/STTR can all vary pretty widely (the pool is a lot smaller compared to SL terps) and the quality depends on the provider's background knowledge as well as quality of audio and any sort of accents.
+
+  In the United States - there are a few main agencies to go for when requesting captioning. If it's a Science-Tech-Engineering-Arts-Math (STEAM) jargon-heavy meeting or conference, I recommend \href{https://whitecoatcaptioning.com/}{White Coat Captioning} - also good for international. For general purpose things where it's not super jargon-heavy or technical, I'll go with \href{https://www.interpreter-now.com/}{Interpreter Now} (beta trial of captioning) and \href{https://captionfirst.com/}{CaptionFirst} (but their quality has been declining lately) or the university's staff captioners. If it's very, very last minute, typically anywhere from 30-minutes notice to 24 hours notice, I go with \href{https://www.acscaptions.com/}{ACS Captions} as they're most likely to find someone that fast. Internationally, both White Coat Captioning and \href{https://www.ai-media.tv/}{AI-Media} are best. There are other concerns like GDPR that might come into play or privacy concerns or other cultural issues.
+
+  For sign language interpreters -- internationally, there's only one agency i recommend: \href{http://www.overseasinterpreting.com/}{Overseas Interpreting} (ASL, and a few other signed languages supported) for in-person interpretation. When we're talking about VRI (Video-Relay Interpreting), such as for remote/online, the only agency I recommend there with any semblence of consistency in the quality is \href{https://www.interpreter-now.com/}{Interpreter Now}. Domestically in the US, i have a pool of ~100 interpreters across various states who have worked with me in the past, and depending on whether they're able to fly out terps I want to that location vs hiring locally -- that's sometimes how i make the decision there.
+
+  \subsubsection{Is auto-captioning ("auto-craptioning") sufficient?}
+
+  No.~\cite{AudioAccessibility, TheAtlantic, DCMP, ReelWords, A11yNYC, Wired, AngryDeafPeople}
+
+  \subsubsection{Who is responsible for providing access?}
+
+  The responsibility falls with the organizers of a meeting or conference or workshop to ask who needs access support and then provide that support. It is additionally the responsibility of the organizer to ensure timely scheduling of an event. Events scheduled with less than 2 days notice is generally unacceptable as it takes advantage of peoples' times but also makes it very hard to arrange any kind of sufficient access. The longer an event, the more of a notice one should give. A decent rule of thumb is that a 2 hour meeting should have at least a week's notice, and a 40 hour (full-week conference) should have 4 month's notice. Towards the large-scale conferences, this rule is not hard or fast, but a minimum of a week's notice should be applied uniformly no matter what.
+
+  \subsubsection{Who is responsible for arranging access?}
+
+  There's no good answer here. However, a good design pattern is to designate a single person as a point of contact for all things accessibility (a11y); or a few people depending on the size of the event. A point of contact is a person who is involved in organizing the event that is designed as the person to talk to for accessibility-related logistics. This also helps reduce a lot of labor on everyone's part. On the organizer's part because they don't need to each individually learn how to arrange access. On the requester's part because they don't need to explain or teach another organizer what access they need or what details to use. That way, instead of having to one-off to different people, you just go back to the same person and say "this one too". The labor involved is much lower if the requester knows they do not have to find an organizer and convince them that this is their job, but rather, just emails whomever is the designated person. An all-around win-win solution which is pretty rare in a process like Snowmass which deals with a lot of trade-offs.
+
+  \subsubsection{Who is responsible for paying for access?}
+
+  Definitely not the person who requested it. For Snowmass, note that while people organizing the public/open meetings are responsible for getting the resources in place, the fiscal cost falls on APS and DPF\footnote{Note that as DPF is a part of APS, it is ultimately governed by APS contistution/bylaws - it cannot operate as an independent organization.}. This should be Snowmass global policy that each topic and frontier has point people — because this isn’t just a matter of being decent but also following U.S. law. In particular, if we look at the organization and how Snowmass fits in; Snowmass is affiliated with DPF, which is under APS. APS is definitely the parent organization when it comes to Snowmass. APS receives both NSF and DOE funding (citation needed). APS is legally required to cover fiscal costs (Chanda check please) because while the 1990 American with Disabilities Act (ADA)~\cite{ADA1991} is relevant here, Section 504~\cite{504}, which predates ADA, is definitely relevant, via ''\textsl{any program or activity receiving federal financial assistance or under any program or activity conducted by any Executive agency or by the USPS}" (citation needed). However, Snowmass is driven by DPF, not the agencies\footnote{This matters as the Snowmass process should not be beholding to the funding agency stovepiping for physics topics. (what the heck is stovepiping?)}. In the past DPF has funded a11y requests (for Giordon, definitely, if we're talking about DPF2019 in Boston) for meetings in the past, but DPF does not necessarily have resources for this. Therefore, there will be explicit asks to the agencies for funds. Recall that DPF's coffers are filled with money via APS which is a mixture of dues, meeting fees, some investments, but APS itself is governed by the ADA/504 (both?). As the APS receives federal funding for a subset of its activities, such as CuWiP\footnote{Conferences for Undergraduate Women in Physics}, it is covered by Section 504 to provide accessibility for all of its activities. As DPF falls under APS, therefore DPF is covered by Section 504 as well.
+
+  Ballpark calculations to assess expected costing\footnote{Regardless of cost, there is a matter of legal rights, which necessitates urgent application to NSF for funds.} for captioning of all Snowmass meetings will quickly occur by any physicist who has spent some time musing about the various energy scales by which the laws of our Universe are applicable for. If each current frontier/topical group defined in the Snowmass 2021 process has biweekly meetings that need to be covered, that will be an expected 3000 meetings throughout the current iteration of the Snowmass process. Assuming each meeting is roughly an hour, assuming 10 USD per minute for captioning the meeting, brings us to an expected 1.8m USD cost in providing captioning services. However, this entire scenario obscures or hides the additional benefit-cost that has yet to be brought up: the benefit of the meeting vs the cost of people's times to attend the meetings. If you are seeing value in having biweekly meetings, great, but if many of those biweekly meetings for a particular topic or frontier often end short of w/o contributions, then perhaps one needs to rethink the amount of additional costs for arranging that meeting. Accessibility requests are just a way of making a lot of those hidden costs more obvious. Lastly, there are additional benefits to things like captioning that you'd get for free, such as a post-meeting transcript\footnote{This also means that note-taking is less of a chore, and perhaps can automatically be done with ML? Less work!}, the ability for many people to attend the meeting while muted and still follow along, or if they're in noisy situations, for students who have difficulty focusing, for people who need to step out for a second but still be able to catch up, etc. And there's also the really nice benefit of being able to just provide thousands of pages of transcripts directly to the funding agencies at the end of the Snowmass process with every discussion that happened -- documented in writing -- verbatim. Then you can take tools to categorize, sort, and maybe start quickly gleaning common concepts or ideas that spring out of multiple meetings that don't overlap enough, etc. The sky is the limit and the entire Snowmass process becomes transparent. Suddenly, that 1.8m USD cost doesn't seem so bad for reducing a significant amount of labor for everyone. If you made this effort entirely proactive, there's no need for a d/Deaf person to request captioning, there's no need for the organizers to ensure it is in place for a specific meeting, and there's no need for the point-of-contact a11y person to handle fiscal costs continuously, by wrapping it into a single contract that establishes the status quo for the entire Snowmass process.
+
+  \subsection{Materials to Provide}
+
+  As part of any meeting or event in particular, one should strive to maintain a consistent set of ''live" materials that evolve over time and improve with experience and usage. A primary goal of this whitepaper should be to produce a checklist that can be provided to all event organizers in order to go through and ensure equitable access to meetings that promote inclusivity and foster a diverse environment. Below, a case study is provided from the U.S. ATLAS organization which has started to provide a checklist to be used for all of its annual meetings. This checklist removes the mental strain of trying to remember all the details as an organizer, because you will be very busy, and the goal is to make it as easy as possible to make the event as inclusive as possible. This was beta-tested during the 2019 US ATLAS annual meeting~\cite{USATLASAnnualMeeting2019}.
+
+  \subsubsection{Case Study: US ATLAS Annual Meeting Checklist}
+
+  This is copied verbatim from~\cite{USATLASChecklist} and is a checklist that was developed as a guide for all hosts of the US ATLAS annual meeting every year to follow to ensure equitable, diverse, and inclusive meetings. This checklist summarizes the steps to be taken by the organizing committee to ensure that we maintain consistent accessibility for all USATLAS-sponsored conferences. This was additionally sent to the ATLAS Diversity and Inclusion contacts as (hopeful) a stepping point for ensuring consistent accessibility for international conferences as well.
+
+  \begin{enumerate}
+    \item Organizing Committee
+    \begin{enumerate}[label=\alph*.]
+      \item Announce policy for selection of organizing committee (with call for volunteers)
+      \item Represent the diversity of US ATLAS on committee (career stage, institution type, gender, race, ethnicity, disability, etc.)
+      \item Ensure that at least one graduate student and one postdoc are included
+    \end{enumerate}
+    \item Registration Form
+    \begin{enumerate}[label=\alph*.]
+      \item Collect demographic information for annual review
+      \item Include comment box for accessibility requests
+      \item Agreement to Code of Conduct as part of registration process
+    \end{enumerate}
+    \item Website
+    \begin{enumerate}[label=\alph*.]
+      \item Include Code of Conduct~\cite{CERNCoC}
+      \item Include all policies (instructions for speakers, instructions for session chairs, scholarship and award criteria)
+      \item Include Equity and Inclusion strategies in speaker and chair instructions
+      \item Provide information for local childcare options
+      \item Provide point of contact for accessibility requests
+      \item Provide organizing committee contact information with the associated areas of responsibility per person in case questions or concerns arise
+    \end{enumerate}
+    \item Venue
+    \begin{enumerate}[label=\alph*.]
+      \item Ensure accessibility of meeting rooms and bathrooms (e.g. for wheelchairs)
+      \item Ensure availability of gender-neutral bathrooms
+      \item Ensure flexible seating/free-standing chairs in meeting rooms (e.g. to accommodate wheelchairs) and that the spaces are scent-free
+      \item Ensure that area for speaker can accommodate different heights and abilities (check podium height)
+      \item Ensure that audio equipment is available and functions correctly
+    \end{enumerate}
+    \item Resources
+    \begin{enumerate}[label=\alph*.]
+      \item Offer student grant travel scholarships
+      \item Offer childcare and room for breastfeeding if requested
+      \item Set aside funding for accessibility requests
+      \item Secure funds for outside speaker for Diversity, Equity and Inclusion talk
+      \item Provide preferred pronoun stickers for nametags
+    \end{enumerate}
+    \item Program
+    \begin{enumerate}[label=\alph*.]
+      \item Devote 1-2 hours for advancement of understanding of equity and inclusion
+      \item Provide professional development opportunities like career planning for students and mini-workshops on giving presentations, interviewing, grant-writing, application-writing or management style (etc.)
+      \item Leave ample time for discussion and respect the timeline
+      \item Have people state their name when asking a question or making a comment
+    \end{enumerate}
+    \item Closeout
+    \begin{enumerate}[label=\alph*.]
+      \item Report to IB with meeting demographics and fulfillment of D\&I guidelines
+    \end{enumerate}
+  \end{enumerate}
+
+  Test cite~\cite{AudioAccessibility, TheAtlantic, DCMP, ReelWords, A11yNYC, Wired, AngryDeafPeople}.
   % does it work
   other stuff. Maybe, maybe not.
   \printbibliography
