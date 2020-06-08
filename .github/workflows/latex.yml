@@ -37,7 +37,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Add in timestamp
         run: |
-          sed -i "s/%%timestamp%%/$(TZ=':US/Eastern' date +'%Y-%m-%dT%H:%M:%S')/g" site/index.html
+          sed "s/%%timestamp%%/$(TZ=':US/Eastern' date +'%Y-%m-%dT%H:%M:%S')/g" index.html > site/index.html
           cat site/index.html
       - name: Download pdfs
         uses: actions/download-artifact@v2
