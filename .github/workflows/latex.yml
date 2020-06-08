@@ -32,19 +32,23 @@ jobs:
   deploy_pdfs:
     runs-on: ubuntu-latest
     needs: [build_latex, build_latex_loi]
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
       - name: Add in timestamp
         run: |
           sed -i "s/%%timestamp%%/$(TZ=':US/Eastern' date +'%Y-%m-%dT%H:%M:%S')/g" site/index.html
+          cat site/index.html
       - name: Download pdfs
         uses: actions/download-artifact@v2
         with:
           path: site
+      - name: Check artifacts
+        run: |
+          tree .
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
